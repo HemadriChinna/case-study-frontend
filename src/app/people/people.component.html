@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar fixed-top bg-body shadow-dark rounded">
+        <div class="container-fluid">
+          <div>
+            <button
+              class="navbar-toggler d-sm-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start d-sm-none"
+              tabindex="-1"
+              data-bs-scroll="true"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <ul class="listitems">
+                <div class="Dashboard" routerLink="/user-dashboard">
+                  <div class="Dashboarditems">
+                    <div class="Dashboardimg">
+                      <img src="assets/images/Dashboard.png" />
+                    </div>
+                    <div class="Dashboardtext">Dashboard</div>
+                  </div>
+                </div>
+                <div class="Timings" routerLink="/user-timings">
+                  <div class="Timingsitems">
+                    <div class="Timingsimg">
+                      <img src="assets/images/Timings.png" />
+                    </div>
+                    <div class="Timingstext">Timings</div>
+                  </div>
+                </div>
+                <div class="Leaves" routerLink="/user-leaves">
+                  <div class="Leavesitems">
+                    <div class="Leavesimg">
+                      <img src="assets/images/Leaves.png" />
+                    </div>
+                    <div class="Leavestext">Leaves</div>
+                  </div>
+                </div>
+                <div class="WFH" routerLink="/WFH">
+                  <div class="WFHitems">
+                    <div class="WFHimg">
+                      <img src="assets/images/WFH.png" />
+                    </div>
+                    <div class="WFHtext">WFH</div>
+                  </div>
+                </div>
+                <div class="Tasks" routerLink="/user-tasks">
+                  <div class="Tasksitems">
+                    <div class="Tasksimg">
+                      <img src="assets/images/Tasks.png" />
+                    </div>
+                    <div class="Taskstext">Tasks</div>
+                  </div>
+                </div>
+                <div class="People" routerLink="/user-people">
+                  <div class="Peopleitems">
+                    <div class="Peopleimg">
+                      <img src="assets/images/People.png" />
+                    </div>
+                    <div class="Peopletext">People</div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <img
+              src="assets/images/logo.png"
+              class="logo"
+              (click)="clickLogo()"
+            />
+          </div>
+          <div>
+            <div class="logos">
+              <button class="bell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bell"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown">
+                <button
+                  class="Avatar"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/images/Avatar.png" alt="Avatar Image" />
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li class="profilediv" routerLink="/user-dashboard">
+                    <svg class="profile">
+                      <path
+                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58z"
+                      ></path>
+                    </svg>
+                    <div>profile</div>
+                  </li>
+                  <li class="logoutdiv" (click)="logout()">
+                    <svg class="logout">
+                      <path
+                        d="m17 7-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4z"
+                      ></path>
+                    </svg>
+                    <div>logout</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="body-items">
+        <div class="menu d-none d-sm-block">
+          <ul class="listitems">
+            <div class="Dashboard" routerLink="/user-dashboard">
+              <div class="Dashboarditems">
+                <div class="Dashboardimg">
+                  <img src="assets/images/Dashboard.png" />
+                </div>
+                <div class="Dashboardtext">Dashboard</div>
+              </div>
+            </div>
+            <div class="Timings" routerLink="/user-timings">
+              <div class="Timingsitems">
+                <div class="Timingsimg">
+                  <img src="assets/images/Timings.png" />
+                </div>
+                <div class="Timingstext">Timings</div>
+              </div>
+            </div>
+            <div class="Leaves" routerLink="/user-leaves">
+              <div class="Leavesitems">
+                <div class="Leavesimg">
+                  <img src="assets/images/Leaves.png" />
+                </div>
+                <div class="Leavestext">Leaves</div>
+              </div>
+            </div>
+            <div class="WFH" routerLink="/WFH">
+              <div class="WFHitems">
+                <div class="WFHimg"><img src="assets/images/WFH.png" /></div>
+                <div class="WFHtext">WFH</div>
+              </div>
+            </div>
+            <div class="Tasks" routerLink="/user-tasks">
+              <div class="Tasksitems">
+                <div class="Tasksimg">
+                  <img src="assets/images/Tasks.png" />
+                </div>
+                <div class="Taskstext">Tasks</div>
+              </div>
+            </div>
+            <div class="People">
+              <div class="Peopleitems">
+                <div class="Peopleimg">
+                  <img src="assets/images/People.png" />
+                </div>
+                <div class="Peopletext">People</div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="Peopledetails">
+          <nav class="nav">
+            <svg class="home" routerLink="/user-dashboard">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+            </svg>
+            <svg class="arroy">
+              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+            </svg>
+            <p class="Userpeople">User people</p>
+          </nav>
+          <h1>Welcome to People</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

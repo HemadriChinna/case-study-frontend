@@ -1,0 +1,56 @@
+body {
+    background-image: url("../images/keycloak-bg.png");
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+}
+.login-page {
+    padding: 25px;
+}
+.text {
+    text-align: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2em;
+    padding: 62px 10px 20px;
+    white-space: normal;
+}
+.header {
+    color: white;
+    overflow: visible;
+    white-space: nowrap;
+}
+/* .main-page {
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding:2%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+} */
+.main-page.bg-white.p-4 {
+    margin: 40px;
+    margin-bottom: 92px;
+}
+.text-1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.Sign-in {
+    margin-top: 33px;
+    margin-bottom: 30px;
+}
+.btn.btn-primary{
+    width: 100%;
+    background-color: #0066CC;
+    color: white;
+    border: #0066CC;
+}
+.email {
+    margin: 10px;
+}
+.password{
+    margin: 10px;
+}

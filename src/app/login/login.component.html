@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="header">
+        <div class="text">BEEHYV</div>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="main-page bg-white p-4">
+              <div class="text-1">Sign in to your account</div>
+              <div class="main-form">
+                <form (submit)="fetchData()">
+                  <div class="email">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      ngModel
+                      name="username"
+                      [(ngModel)]="username"
+                      required
+                      email
+                    />
+                  </div>
+                  <div class="password">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      [(ngModel)]="password"
+                    />
+                  </div>
+                  <div class="Sign-in">
+                    <input
+                      type="submit"
+                      value="Sign In"
+                      class="btn btn-primary"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+.logo {
+    cursor: pointer;
+    height: 55px;
+    margin-left: 10px;
+}
+.shadow-dark {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.bell {
+    background: none;
+    border: none;
+    padding-right: 20px;
+}
+.Avatar {
+    background : none;
+    border: none;
+    padding-right: 4vb;
+}
+.navbar-toggler{
+    border: none;
+}
+.offcanvas.offcanvas-start.d-sm-none {
+    margin-top: 5em;
+    width: 180px;
+    border-radius: 20px;
+    margin-left: 2%;
+    height: 82%;
+}
+.menu.d-none.d-sm-block {
+    margin-top: 5em;
+    height: 82vh;
+    width: 180px;
+    margin-left: 2%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.listitems {
+    padding: 15px 0px;
+}
+.Dashboard {    
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+}
+.Dashboarditems {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    align-items: center;
+}
+.Dashboardimg {
+    min-width: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.Dashboardtext {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.Timings{
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+}
+.Timingsitems {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    align-items: center;
+}
+.Timingsimg {
+    min-width: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.Timingstext {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.Leaves {
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+}
+.Leavesitems {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    align-items: center;
+}
+.Leavesimg {
+    min-width: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.WFH {
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+    background-color: rgb(195, 195, 195);
+}
+.WFHitems {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    align-items: center;
+}
+.WFHimg {
+    min-width: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.Tasks {
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+}
+.Tasksitems {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    align-items: center;
+}
+.Tasksimg {
+    min-width: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.People {
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+}
+.Peopleitems {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    align-items: center;
+}
+.Peopleimg {
+    min-width: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.body-items{
+    display: flex;
+}
+.WFHdetails {
+    margin-top: 5em;
+    padding-top: 1.15%;
+    padding-left: 3%;
+    width: 43%;
+}
+.home {
+    fill: gray;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.home:focus {
+    outline: none;
+}
+.arroy {
+    fill: gray;
+    height: 30px;
+    width: 30px;
+}
+.userWfh {
+    color: gray;
+    cursor: pointer;
+}
+.logout {
+    width: 25px;
+    height: 20px;
+    fill: blue;
+}
+.logoutdiv {
+    display: flex;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.profilediv {
+    display: flex;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-bottom: rgba(0, 0, 0, 0.12) solid thin;
+}
+.profile {
+    width: 25px;
+    height: 20px;
+    fill: blue;
+}
+.logos {
+    display: flex;
+    align-items: center;
+}
+.Dashboard:hover {
+    background-color: rgb(240, 231, 231);
+}
+.Timings:hover {
+    background-color: rgb(240, 231, 231);
+}
+.Leaves:hover {
+    background-color: rgb(240, 231, 231);
+}
+.Tasks:hover {
+    background-color: rgb(240, 231, 231);
+}
+.People:hover {
+    background-color: rgb(240, 231, 231);
+}
+.fixed-bottom.d-flex.justify-content-end {
+    margin: 30px;
+}
+.addbutton {
+    right: 25px;
+    bottom: 80px;
+    position: fixed;
+    border: none;
+    background-color: rgb(77, 108, 217);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+}
+.add {
+    height: 25px;
+    width: 25px;
+    fill: rgb(255, 255, 255);
+}
+.addbutton:hover {
+    background-color: rgb(70, 70, 165);
+}
+.WFHcard {
+    width: 200%;
+}
+.WFHcarddetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 1.1rem 2.5rem;
+}
+.downarrow {
+    width: 30px;
+    height: 15px;
+}
+.downarrowbutton {
+    height: auto;
+    background:none;
+    border: none;
+}
+.card.card-body {
+    border: none;
+}
+.temp {
+    text-align: center;
+}
+.modal-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (max-width: 500px) {
+    .modal-body {
+        display: block;
+    }
+}
+.startdate {
+    margin-bottom: 30px;
+}
+.calendar {
+    height: 25px;
+    width: 25px;
+}
+.Approve {
+    background: none;
+    border: 1px solid green;
+    color: green;
+}
+.Approve:hover {
+    color: green;
+}
+.Reject {
+    background: none;
+    border: 1px solid rgba(211, 47, 47, 0.5);
+    color: rgb(211, 47, 47);
+    margin-right: 10%;
+}
+.Reject:hover {
+    color: red;
+}
+.taskbutton {
+    background: none;
+    border: 1px solid green;
+    color: green;
+}
+.TaskDiv {
+    display: flex;
+}
+.modal-body.notification {
+    display: block;
+    text-align: center;
+}
